@@ -10,10 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="badtradenegativeprice.txt" />
+    <None Remove="badtradetoofew.txt" />
+    <None Remove="badtradetoomany.txt" />
     <None Remove="goodtrades.txt" />
+    <None Remove="notrades.txt" />
+    <None Remove="onegoodtrade.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="badtradetoofew.txt" />
+    <EmbeddedResource Include="onegoodtrade.txt" />
+    <EmbeddedResource Include="badtradetoomany.txt" />
+    <EmbeddedResource Include="notrades.txt" />
+    <EmbeddedResource Include="badtradenegativeprice.txt" />
     <EmbeddedResource Include="goodtrades.txt" />
   </ItemGroup>
 
